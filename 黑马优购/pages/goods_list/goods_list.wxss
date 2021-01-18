@@ -1,0 +1,29 @@
+.shop-box {
+  display: flex;
+  padding: 20rpx 10rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+  box-sizing: border-box;
+}
+.shop-box-left {
+  display: flex;
+  margin-right: 5px;
+  align-items: center;
+}
+.shop-box-left image {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+.shop-box-right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.good-name {
+  font-size: 26rpx;
+}
+.good-price {
+  font-size: 32rpx;
+  color: #c00000;
+}

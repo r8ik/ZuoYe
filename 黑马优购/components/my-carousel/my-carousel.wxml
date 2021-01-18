@@ -1,0 +1,10 @@
+<view class="carousel">
+  <swiper class="banner" autoplay circular indicator-dots>
+    <swiper-item wx:for="{{carouselList}}" wx:key="index">
+      <navigator wx:if="{{item.image_src}}" class="navigator" url="/pages/goods_detail/goods_detail?{{item.navigator_url}}">
+        <image class="img" src="{{item.image_src}}"></image>
+      </navigator>
+      <image wx:else class="img" src="{{item.pics_big_url}}"></image>
+    </swiper-item>
+  </swiper>
+</view>

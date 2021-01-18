@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "myCarousel":"/components/my-carousel/my-carousel"
+  }
+}

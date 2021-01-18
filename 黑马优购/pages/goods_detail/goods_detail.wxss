@@ -1,0 +1,63 @@
+.carousel {
+  height: 750rpx;
+}
+.price {
+  color: #C00000;
+  font-size: 36rpx;
+  margin: 20rpx 0;
+}
+.title-box {
+  padding: 20rpx;
+  padding-right: 0;
+}
+.name-box {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-size: 26rpx;
+  margin-right: 20rpx;
+}
+.collection {
+  display: flex;
+  width: 240rpx;
+  font-size: 24rpx;
+  justify-content: center;
+  border-left: 2rpx solid #efefef;
+  color: gray;
+  align-items: center;
+}
+.express {
+  font-size: 24rpx;
+  color: gray;
+  margin: 20rpx 0;
+}
+.rich {
+  margin-bottom: 100rpx;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100rpx;
+  width: 100%;
+  align-items: center;
+  background-color: #fff;
+}
+.bottom-left {
+  display: flex;
+  padding: 0 10px;
+}
+.bottom-left image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.bottom-left>view {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-left view view {
+  /* margin-top: 3px; */
+  font-size: 24rpx;
+  color: #646566;
+}

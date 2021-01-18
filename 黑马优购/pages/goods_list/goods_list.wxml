@@ -1,0 +1,18 @@
+<scroll-view style="height:100vh" bindscrolltolower="loading" scroll-y="{{scrollFlag}}">
+  <view>
+    <view class="shop-box" wx:for="{{shopList}}" wx:key="goods_id">
+      <view class="shop-box-left">
+        <navigator wx:if="{{item.goods_small_logo}}" url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+          <image src="{{item.goods_small_logo}}"></image>
+        </navigator>
+        <image wx:else
+          src="https://img3.doubanio.com/f/movie/8dd0c794499fe925ae2ae89ee30cd225750457b4/pics/movie/celebrity-default-medium.png">
+        </image>
+      </view>
+      <view class="shop-box-right">
+        <view class="good-name">{{item.goods_name}}</view>
+        <view class="good-price">￥{{item.goods_price}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

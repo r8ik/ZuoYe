@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mySearch":"/components/my-search/my-search",
+    "myCarousel":"/components/my-carousel/my-carousel"
+  }
+}

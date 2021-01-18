@@ -1,0 +1,29 @@
+<!-- <scroll-view id="scroll" scroll-y='{{!isindrag}}' bindscroll='scorll' style="margin-top:100rpx"> -->
+<!-- <view bindtouchstart='start' bindtouchend='end' bindtouchmove='move'> -->
+<!-- <view style='height:{{hei}}px;background:gray; justify-content: center;display:flex;align-items: center;'>{{desc}}</view> -->
+<view class="container">
+  <mySearch></mySearch>
+  <myCarousel carouselList="{{carouselList}}" carousel="carousel"></myCarousel>
+  <view class="nav">
+    <view wx:for="{{navList}}" wx:key="name">
+      <navigator wx:if="{{item.open_type}}" open-type="{{item.open_type}}" url="/pages/sort/sort">
+        <image src="{{item.image_src}}"></image>
+      </navigator>
+      <image wx:else src="{{item.image_src}}"></image>
+    </view>
+  </view>
+  <view class="fashion">
+    <view wx:for="{{floordata}}" wx:key="index">
+      <view class="fashion-top">
+        <image src="{{item.floor_title.image_src}}"></image>
+      </view>
+      <view class="fashion-image">
+        <view wx:for="{{item.product_list}}" wx:key="index">
+          <image mode="widthFix" style="width:{{item.image_width}}rpx;" src="{{item.image_src}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- </view> -->
+<!-- </scroll-view> -->

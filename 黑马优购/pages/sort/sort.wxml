@@ -1,0 +1,22 @@
+<view style="height: 100%;">
+  <mySearch></mySearch>
+  <view class="content">
+    <scroll-view class="scroll-left" scroll-y="true" style="height: 100%;">
+      <view wx:for="{{categoriesList}}" wx:key="cat_id" bindtap="handleChoice" data-index="{{index}}"
+        class=" {{categoriesIndex===index?'choice-style':''}}">{{item.cat_name}}</view>
+    </scroll-view>
+    <scroll-view scroll-top="{{scrollTop}}" class="scroll-right" scroll-y="true" style="height: 100%;">
+      <view wx:for="{{categoriesList[categoriesIndex].children}}" wx:key="cat_id">
+        <view class="cate-title">
+          / {{item.cat_name}} /
+        </view>
+        <view class="cate-list">
+          <view wx:for="{{item.children}}" wx:key="cat_id" data-id="{{item.cat_id}}" bindtap="handleJumpShopList">
+            <image src="{{item.cat_icon}}"></image>
+            <text>{{item.cat_name}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

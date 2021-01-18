@@ -1,0 +1,61 @@
+page {
+  height: 100%;
+}
+.content {
+  display: flex;
+  height: 100%;
+  padding-top: 100rpx;
+  box-sizing: border-box;
+}
+.scroll-left {
+  width: 240rpx;
+  background-color: #F7F7F7;
+}
+.scroll-left view {
+  position: relative;
+  line-height: 60px;
+  text-align: center;
+  font-size: 12px;
+}
+.scroll-right {
+  flex: 1;
+}
+.choice-style {
+  background-color: #fff;
+}
+.choice-style::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 30px;
+  background-color: #C00000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.cate-title {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+}
+.cate-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cate-list view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 33.33%;
+}
+.cate-list view image {
+  width: 120rpx;
+  height: 120rpx;
+}
+.cate-list view text {
+  font-size: 24rpx;
+}

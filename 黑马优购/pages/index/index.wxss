@@ -1,0 +1,81 @@
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  background-color: #c00000;
+  z-index: 99999;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.search input {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  height: 72rpx;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+  color: #000;
+}
+.carousel {
+  height: 330rpx;
+  margin-top: 100rpx;
+}
+.banner {
+  height: 100%;
+}
+.nav {
+  display: flex;
+  height: 206rpx;
+}
+.nav>view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 100%;
+}
+.nav>view image {
+  width: 128rpx;
+  height: 140rpx;
+}
+.fashion {
+  padding: 0 8rpx;
+}
+.fashion-top {
+  height: 60rpx;
+}
+.fashion-top image {
+  width: 100%;
+  height: 100%;
+}
+.fashion-image {
+  overflow: hidden;
+}
+.fashion-image view {
+  float: left;
+  font-size: 0;
+}
+.fashion-image view:nth-child(2) image {
+  height: 93.5px!important;
+}
+.fashion-image view:nth-child(2) {
+  padding-left: 12rpx;
+}
+.fashion-image view:nth-child(3) {
+  padding-left: 22rpx;
+}
+.fashion-image view:nth-child(4) {
+  padding-top: 16rpx;
+  padding-left: 12rpx;
+}
+.fashion-image view:nth-child(5) {
+  padding-left: 22rpx;
+  padding-top: 8rpx;
+}
+.fashion view:nth-child(1) .fashion-image view:nth-child(4) {
+  padding-top: 8rpx;
+}

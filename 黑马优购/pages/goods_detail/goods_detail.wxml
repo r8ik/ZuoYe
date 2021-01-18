@@ -1,0 +1,33 @@
+<myCarousel carouselList="{{shopList.pics}}" carousel="carousel"></myCarousel>
+<view class="title-box">
+  <view class="price">
+    ￥{{shopList.goods_price}}
+  </view>
+  <view class="name-box">
+    <view class="name">
+      {{shopList.goods_name}}
+    </view>
+    <view class="collection">
+      收藏
+    </view>
+  </view>
+  <view class="express">
+    快递：免运费
+  </view>
+</view>
+<rich-text class="rich" nodes="{{shopList.goods_introduce}}"></rich-text>
+<view class="bottom">
+  <view class="bottom-left">
+    <view>
+      <image mode="widthFix" src="/static/images/shop_detail/store.png"></image>
+      <view>店铺</view>
+    </view>
+    <view>
+      <image src="/static/images/shop_detail/cart.png"></image>
+      <view>购物车</view>
+    </view>
+  </view>
+  <view class="bottom-right">
+
+  </view>
+</view>
